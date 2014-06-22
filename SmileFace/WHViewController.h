@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface WHViewController : UIViewController
+- (IBAction)segementValueChanged:(UISegmentedControl *)sender;
 
 @end
