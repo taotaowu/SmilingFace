@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5EC53916195694080098ED7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC53915195694080098ED7F /* Foundation.framework */; };
+		5EC53918195694080098ED7F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC53917195694080098ED7F /* CoreGraphics.framework */; };
+		5EC5391A195694090098ED7F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC53919195694090098ED7F /* UIKit.framework */; };
+		5EC53920195694090098ED7F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5EC5391E195694090098ED7F /* InfoPlist.strings */; };
+		5EC53922195694090098ED7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC53921195694090098ED7F /* main.m */; };
+		5EC53926195694090098ED7F /* WHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC53925195694090098ED7F /* WHAppDelegate.m */; };
+		5EC53929195694090098ED7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EC53927195694090098ED7F /* Main.storyboard */; };
+		5EC5392C195694090098ED7F /* WHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC5392B195694090098ED7F /* WHViewController.m */; };
+		5EC5392E195694090098ED7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EC5392D195694090098ED7F /* Images.xcassets */; };
+		5EC53935195694090098ED7F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC53934195694090098ED7F /* XCTest.framework */; };
+		5EC53936195694090098ED7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC53915195694080098ED7F /* Foundation.framework */; };
+		5EC53937195694090098ED7F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC53919195694090098ED7F /* UIKit.framework */; };
+		5EC5393F195694090098ED7F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5EC5393D195694090098ED7F /* InfoPlist.strings */; };
+		5EC53941195694090098ED7F /* SmileFaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC53940195694090098ED7F /* SmileFaceTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5EC53938195694090098ED7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EC5390A195694080098ED7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EC53911195694080098ED7F;
+			remoteInfo = SmileFace;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5EC53912195694080098ED7F /* SmileFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmileFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EC53915195694080098ED7F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5EC53917195694080098ED7F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5EC53919195694090098ED7F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5EC5391D195694090098ED7F /* SmileFace-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SmileFace-Info.plist"; sourceTree = "<group>"; };
+		5EC5391F195694090098ED7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5EC53921195694090098ED7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5EC53923195694090098ED7F /* SmileFace-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmileFace-Prefix.pch"; sourceTree = "<group>"; };
+		5EC53924195694090098ED7F /* WHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHAppDelegate.h; sourceTree = "<group>"; };
+		5EC53925195694090098ED7F /* WHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHAppDelegate.m; sourceTree = "<group>"; };
+		5EC53928195694090098ED7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5EC5392A195694090098ED7F /* WHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHViewController.h; sourceTree = "<group>"; };
+		5EC5392B195694090098ED7F /* WHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHViewController.m; sourceTree = "<group>"; };
+		5EC5392D195694090098ED7F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5EC53933195694090098ED7F /* SmileFaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmileFaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EC53934195694090098ED7F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5EC5393C195694090098ED7F /* SmileFaceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SmileFaceTests-Info.plist"; sourceTree = "<group>"; };
+		5EC5393E195694090098ED7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5EC53940195694090098ED7F /* SmileFaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmileFaceTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5EC5390F195694080098ED7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EC53918195694080098ED7F /* CoreGraphics.framework in Frameworks */,
+				5EC5391A195694090098ED7F /* UIKit.framework in Frameworks */,
+				5EC53916195694080098ED7F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EC53930195694090098ED7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EC53935195694090098ED7F /* XCTest.framework in Frameworks */,
+				5EC53937195694090098ED7F /* UIKit.framework in Frameworks */,
+				5EC53936195694090098ED7F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5EC53909195694080098ED7F = {
+			isa = PBXGroup;
+			children = (
+				5EC5391B195694090098ED7F /* SmileFace */,
+				5EC5393A195694090098ED7F /* SmileFaceTests */,
+				5EC53914195694080098ED7F /* Frameworks */,
+				5EC53913195694080098ED7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5EC53913195694080098ED7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EC53912195694080098ED7F /* SmileFace.app */,
+				5EC53933195694090098ED7F /* SmileFaceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5EC53914195694080098ED7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EC53915195694080098ED7F /* Foundation.framework */,
+				5EC53917195694080098ED7F /* CoreGraphics.framework */,
+				5EC53919195694090098ED7F /* UIKit.framework */,
+				5EC53934195694090098ED7F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5EC5391B195694090098ED7F /* SmileFace */ = {
+			isa = PBXGroup;
+			children = (
+				5EC53924195694090098ED7F /* WHAppDelegate.h */,
+				5EC53925195694090098ED7F /* WHAppDelegate.m */,
+				5EC53927195694090098ED7F /* Main.storyboard */,
+				5EC5392A195694090098ED7F /* WHViewController.h */,
+				5EC5392B195694090098ED7F /* WHViewController.m */,
+				5EC5392D195694090098ED7F /* Images.xcassets */,
+				5EC5391C195694090098ED7F /* Supporting Files */,
+			);
+			path = SmileFace;
+			sourceTree = "<group>";
+		};
+		5EC5391C195694090098ED7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5EC5391D195694090098ED7F /* SmileFace-Info.plist */,
+				5EC5391E195694090098ED7F /* InfoPlist.strings */,
+				5EC53921195694090098ED7F /* main.m */,
+				5EC53923195694090098ED7F /* SmileFace-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5EC5393A195694090098ED7F /* SmileFaceTests */ = {
+			isa = PBXGroup;
+			children = (
+				5EC53940195694090098ED7F /* SmileFaceTests.m */,
+				5EC5393B195694090098ED7F /* Supporting Files */,
+			);
+			path = SmileFaceTests;
+			sourceTree = "<group>";
+		};
+		5EC5393B195694090098ED7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5EC5393C195694090098ED7F /* SmileFaceTests-Info.plist */,
+				5EC5393D195694090098ED7F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5EC53911195694080098ED7F /* SmileFace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EC53944195694090098ED7F /* Build configuration list for PBXNativeTarget "SmileFace" */;
+			buildPhases = (
+				5EC5390E195694080098ED7F /* Sources */,
+				5EC5390F195694080098ED7F /* Frameworks */,
+				5EC53910195694080098ED7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmileFace;
+			productName = SmileFace;
+			productReference = 5EC53912195694080098ED7F /* SmileFace.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5EC53932195694090098ED7F /* SmileFaceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EC53947195694090098ED7F /* Build configuration list for PBXNativeTarget "SmileFaceTests" */;
+			buildPhases = (
+				5EC5392F195694090098ED7F /* Sources */,
+				5EC53930195694090098ED7F /* Frameworks */,
+				5EC53931195694090098ED7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5EC53939195694090098ED7F /* PBXTargetDependency */,
+			);
+			name = SmileFaceTests;
+			productName = SmileFaceTests;
+			productReference = 5EC53933195694090098ED7F /* SmileFaceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5EC5390A195694080098ED7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WH;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "吴海涛";
+				TargetAttributes = {
+					5EC53932195694090098ED7F = {
+						TestTargetID = 5EC53911195694080098ED7F;
+					};
+				};
+			};
+			buildConfigurationList = 5EC5390D195694080098ED7F /* Build configuration list for PBXProject "SmileFace" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5EC53909195694080098ED7F;
+			productRefGroup = 5EC53913195694080098ED7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5EC53911195694080098ED7F /* SmileFace */,
+				5EC53932195694090098ED7F /* SmileFaceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5EC53910195694080098ED7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EC5392E195694090098ED7F /* Images.xcassets in Resources */,
+				5EC53920195694090098ED7F /* InfoPlist.strings in Resources */,
+				5EC53929195694090098ED7F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EC53931195694090098ED7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EC5393F195694090098ED7F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5EC5390E195694080098ED7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EC5392C195694090098ED7F /* WHViewController.m in Sources */,
+				5EC53922195694090098ED7F /* main.m in Sources */,
+				5EC53926195694090098ED7F /* WHAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EC5392F195694090098ED7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EC53941195694090098ED7F /* SmileFaceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5EC53939195694090098ED7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EC53911195694080098ED7F /* SmileFace */;
+			targetProxy = 5EC53938195694090098ED7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5EC5391E195694090098ED7F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EC5391F195694090098ED7F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5EC53927195694090098ED7F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EC53928195694090098ED7F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5EC5393D195694090098ED7F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EC5393E195694090098ED7F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5EC53942195694090098ED7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5EC53943195694090098ED7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5EC53945195694090098ED7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmileFace/SmileFace-Prefix.pch";
+				INFOPLIST_FILE = "SmileFace/SmileFace-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5EC53946195694090098ED7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmileFace/SmileFace-Prefix.pch";
+				INFOPLIST_FILE = "SmileFace/SmileFace-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5EC53948195694090098ED7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SmileFace.app/SmileFace";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmileFace/SmileFace-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SmileFaceTests/SmileFaceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5EC53949195694090098ED7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SmileFace.app/SmileFace";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmileFace/SmileFace-Prefix.pch";
+				INFOPLIST_FILE = "SmileFaceTests/SmileFaceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5EC5390D195694080098ED7F /* Build configuration list for PBXProject "SmileFace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EC53942195694090098ED7F /* Debug */,
+				5EC53943195694090098ED7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EC53944195694090098ED7F /* Build configuration list for PBXNativeTarget "SmileFace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EC53945195694090098ED7F /* Debug */,
+				5EC53946195694090098ED7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5EC53947195694090098ED7F /* Build configuration list for PBXNativeTarget "SmileFaceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EC53948195694090098ED7F /* Debug */,
+				5EC53949195694090098ED7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5EC5390A195694080098ED7F /* Project object */;
+}
