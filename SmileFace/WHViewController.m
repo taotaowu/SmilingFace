@@ -7,6 +7,7 @@
 //
 #define kImageWidth 40
 #define kImageHeight 40
+#define kImageDeltaUp 40
 
 #import "WHViewController.h"
 
@@ -29,7 +30,7 @@
         int currentColumn = i % columns ;
         int currentRow = i / columns;
         CGFloat positionX = margin + currentColumn * (margin + kImageWidth);
-        CGFloat positionY = margin + currentRow * (margin + kImageHeight);
+        CGFloat positionY = margin + kImageDeltaUp + currentRow * (margin + kImageHeight);
         [self addImageViewsWithX:positionX andY:positionY imageName:imageName];
     }
 }
@@ -49,6 +50,26 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)segementValueChanged:(UISegmentedControl *)sender {
+- (IBAction)segementValueChanged:(UISegmentedControl *)sender
+{
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.5];
+    NSInteger selectedIndex = sender.selectedSegmentIndex;
+    NSInteger columns = selectedIndex + 2;
+    CGFloat margin = (self.view.frame.size.width - columns * kImageWidth) / (columns + 1);
+    NSArray *subViews = [self.view subviews];
+    for(int i = 0 ; i < 9 ; i ++)
+    {
+        UIView *imageView = [subViews objectAtIndex:(i + 1)];
+        CGRect tempRect = imageView.frame;
+        int currentColumn = i % columns;
+        int currentRow = i / columns;
+        CGFloat x = margin + (kImageWidth + margin) * currentColumn;
+        CGFloat y = margin + kImageDeltaUp + (kImageHeight + margin) * currentRow;
+        tempRect.origin = CGPointMake(x, y);
+        imageView.frame = tempRect;
+    }
+    [UIView commitAnimations];
+    
 }
 @end
