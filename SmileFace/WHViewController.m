@@ -8,7 +8,7 @@
 #define kImageWidth 40
 #define kImageHeight 40
 #define kImageDeltaUp 40
-
+#define kImageViewCount 9
 #import "WHViewController.h"
 
 @interface WHViewController ()
@@ -22,15 +22,17 @@
     [super viewDidLoad];
 //    [self addImageViews];
     int columns = 2;
+    int totalRow = kImageViewCount / columns + 1;
     CGFloat margin = (self.view.frame.size.width - columns * kImageWidth) / (columns + 1);
+    CGFloat marginY = (self.view.frame.size.height - totalRow  * kImageHeight) / (totalRow + 1);
 //    [self addImageViewsWithX:positionX andY:positionY];
-    for(int i = 0 ; i < 9 ; i++)
+    for(int i = 0 ; i < kImageViewCount ; i++)
     {
         NSString *imageName = [NSString stringWithFormat:@"01%d.png",i];
         int currentColumn = i % columns ;
         int currentRow = i / columns;
         CGFloat positionX = margin + currentColumn * (margin + kImageWidth);
-        CGFloat positionY = margin + kImageDeltaUp + currentRow * (margin + kImageHeight);
+        CGFloat positionY = marginY  + currentRow * (marginY + kImageHeight);
         [self addImageViewsWithX:positionX andY:positionY imageName:imageName];
     }
 }
@@ -57,15 +59,17 @@
     NSInteger selectedIndex = sender.selectedSegmentIndex;
     NSInteger columns = selectedIndex + 2;
     CGFloat margin = (self.view.frame.size.width - columns * kImageWidth) / (columns + 1);
+    int totalRow = kImageViewCount / columns + 1;
+    CGFloat marginY = (self.view.frame.size.height - totalRow  * kImageHeight) / (totalRow + 1);
     NSArray *subViews = [self.view subviews];
-    for(int i = 0 ; i < 9 ; i ++)
+    for(int i = 0 ; i < kImageViewCount ; i ++)
     {
         UIView *imageView = [subViews objectAtIndex:(i + 1)];
         CGRect tempRect = imageView.frame;
         int currentColumn = i % columns;
         int currentRow = i / columns;
         CGFloat x = margin + (kImageWidth + margin) * currentColumn;
-        CGFloat y = margin + kImageDeltaUp + (kImageHeight + margin) * currentRow;
+        CGFloat y = marginY  + (kImageHeight + marginY) * currentRow;
         tempRect.origin = CGPointMake(x, y);
         imageView.frame = tempRect;
     }
