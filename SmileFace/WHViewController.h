@@ -10,5 +10,6 @@
 
 @interface WHViewController : UIViewController
 - (IBAction)segementValueChanged:(UISegmentedControl *)sender;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 
 @end
